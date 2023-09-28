@@ -8,12 +8,14 @@ MODULE_LICENSE("Dual BSD/GPL");
 static int hello_init(void)
 {
 	printk(KERN_ALERT "Hello, world\n");
+	printk(KERN_ALERT "[ersincengiz]: Hello, world\n");
 	return 0;
 }
 
 static void hello_exit(void)
 {
 	printk(KERN_ALERT "Goodbye, cruel world\n");
+	printk(KERN_ALERT "[ersincengiz]: Goodbye, cruel world\n");
 }
 
 module_init(hello_init);
